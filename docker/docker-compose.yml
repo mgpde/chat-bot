@@ -16,6 +16,7 @@ services:
     cap_add: [SYS_ADMIN]
     volumes:
       # - "./.env:/app/server/.env"
+      - "storage:/app/server/storage"
       - "../server/storage:/app/server/storage"
       - "../collector/hotdir/:/app/collector/hotdir"
       - "../collector/outputs/:/app/collector/outputs"
